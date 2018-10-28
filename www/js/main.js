@@ -1,9 +1,14 @@
-// 12
+// 13
 
 let lettersInAlphabet = 'abcdefghijklmnopqrstuvwxyzåäöABCDEFGHOJKLMNOPQRSTUVWXYZÅÄÖ';
 
-function isInAlphabet(aLetter) {
-  return lettersInAlphabet.includes(aLetter);
+function isInAlphabet(aString) {
+  for(letter of aString) {
+    if(!lettersInAlphabet.includes(letter)) {
+      return false;
+    }
+  }
+  return true;
 }
 
-console.log(isInAlphabet('a'));
+console.log(isInAlphabet('mySecretPassword'));
