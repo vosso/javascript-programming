@@ -1,2 +1,8 @@
-// 1
-console.log('Hello world');
+// 2
+function printName(name) {
+  console.log('Hello ' + name);
+}
+
+let name = 'Mikael';
+
+printName(name);
