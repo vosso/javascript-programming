@@ -1,10 +1,14 @@
-// 3
+// 4
 
 let name;
 
 function askForName() {
   name = prompt('What is your name?');
-  console.log('Hello ' + name);
+  if (name) {
+    console.log('Hello ' + name);
+  } else {
+    console.log('Goodbye!');
+  }
 }
 
 askForName();
