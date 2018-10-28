@@ -1,9 +1,5 @@
-// 8
+// 9
 
-let numbers = '';
+let aNumber = 2;
 
-for(let i = 1; i <= 10; i++) {
-  numbers = numbers + i + '...';
-}
-
-console.log(numbers);
+console.log(Number.isInteger(aNumber / 2));
