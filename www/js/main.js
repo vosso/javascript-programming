@@ -1,17 +1,10 @@
-// 10
+// 11
 
-function isEvenNumber(aNumber) {
-  return Number.isInteger(aNumber / 2);
+let text = 'hej på dig';
+let searchFor = 'dig';
+
+function searchIndex(text, searchFor) {
+  return text.indexOf(searchFor);
 }
 
-let numbers = '';
-
-for(i = 1; i <= 10; i++) {
-  if(isEvenNumber(i)) {
-    numbers += i + '...';
-  } else {
-    numbers += i + '.';
-  }
-}
-
-console.log(numbers);
+console.log(searchIndex(text, searchFor));
