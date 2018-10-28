@@ -1,10 +1,9 @@
-// 11
+// 12
 
-let text = 'hej på dig';
-let searchFor = 'dig';
+let lettersInAlphabet = 'abcdefghijklmnopqrstuvwxyzåäöABCDEFGHOJKLMNOPQRSTUVWXYZÅÄÖ';
 
-function searchIndex(text, searchFor) {
-  return text.indexOf(searchFor);
+function isInAlphabet(aLetter) {
+  return lettersInAlphabet.includes(aLetter);
 }
 
-console.log(searchIndex(text, searchFor));
+console.log(isInAlphabet('a'));
