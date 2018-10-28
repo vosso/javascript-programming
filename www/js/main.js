@@ -1,8 +1,10 @@
-// 2
-function printName(name) {
+// 3
+
+let name;
+
+function askForName() {
+  name = prompt('What is your name?');
   console.log('Hello ' + name);
 }
 
-let name = 'Mikael';
-
-printName(name);
+askForName();
