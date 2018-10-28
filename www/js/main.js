@@ -1,5 +1,9 @@
-// 7
+// 8
 
-for(let i = 10; i > 0; i--) {
-  console.log(i + '...');
+let numbers = '';
+
+for(let i = 1; i <= 10; i++) {
+  numbers = numbers + i + '...';
 }
+
+console.log(numbers);
